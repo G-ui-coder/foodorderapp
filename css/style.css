@@ -1,0 +1,23 @@
+/* styles.css */
+body {
+  background-color: #f7f7f7;
+}
+
+h2, h3 {
+  color: #333;
+}
+
+#menu-list .card {
+  margin-bottom: 20px;
+}
+
+#order-summary {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+#clear-order {
+  display: none; /* Hidden until an order is placed */
+}

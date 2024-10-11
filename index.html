@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taste of Nigeria - Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Ezzy-Nita's Kitchen </a>
+</nav>
+
+<!-- Main Container -->
+<div class="container mt-5">
+
+    <!-- Menu Display -->
+    <h2 class="text-center mb-4">Menu</h2>
+    <div class="row" id="menu-list">
+        <!-- Menu items will be generated here dynamically with JavaScript -->
+    </div>
+
+    <!-- Order Form -->
+    <div class="mt-5">
+        <h3>Take Order</h3>
+        <form id="order-form">
+            <div class="form-group">
+                <label for="customer-id">Customer ID</label>
+                <input type="text" class="form-control" id="customer-id" placeholder="Enter Customer ID">
+            </div>
+            <div class="form-group">
+                <label for="dish-select">Select Dishes</label>
+                <select multiple class="form-control" id="dish-select">
+                    <!-- Dish options will be populated here by JavaScript -->
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Place Order</button>
+        </form>
+    </div>
+
+    <!-- Order Summary -->
+    <div class="mt-5">
+        <h3>Order Summary</h3>
+        <div id="order-summary">
+            <!-- Order summary will be shown here -->
+        </div>
+        <button class="btn btn-danger mt-2" id="clear-order">Clear Order</button>
+    </div>
+
+</div>
+
+  <!-- Scripts -->
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/rest.js"></script>
+</body>
+</html>
